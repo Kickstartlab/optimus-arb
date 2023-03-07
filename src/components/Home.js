@@ -40,7 +40,7 @@ function Home() {
 
             <div className='bg-gradient font-outfit overflow-hidden text-white-100'>
 
-                <div className='absolute right-0 left-0 lg:block hidden mt-20'>
+                <div className='absolute right-0 left-0 mt-20'>
                     <img src={bg_spiral} alt="" className='flex mx-auto rotate' />
                 </div>
 
