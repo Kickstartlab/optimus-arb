@@ -34,10 +34,10 @@ function Footer() {
 
                             <div className='flex justify-center gap-5 items-center lg:mt-0 mt-6'>
 
-                                <a href='/'>
+                                <a href='https://t.me/optimusarb'>
                                     <img src={telegram} alt="Telegram" className='' />
                                 </a>
-                                <a href='/'>
+                                <a href='https://twitter.com/optimusarb'>
                                     <img src={twitter} alt="Twitter" className='' />
                                 </a>
                                 <a href='/'>

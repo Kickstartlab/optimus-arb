@@ -24,9 +24,43 @@
   opacity: 0.2;
 }
 
-.side{
+.side {
   background-image: url(./assets/spiral_2.png);
   background-position: left top;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.rotate {
+  animation: rotation 10s infinite linear;
+  /* filter: drop-shadow(8px 8px 6px rgb(146, 179, 221)); */
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.levitate {
+  transform: translatey(0px);
+  animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0px);
+  }
+
+  50% {
+    transform: translate(0, 15px);
+  }
+
+  100% {
+    transform: translate(0, -0px);
+  }
 }

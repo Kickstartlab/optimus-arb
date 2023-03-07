@@ -1,5 +1,5 @@
 
-import React from 'react'
+import React, {useEffect} from 'react'
 import Menu from './Menu'
 import fire from '../assets/fire.png'
 import on from '../assets/on.png'
@@ -12,8 +12,12 @@ import wal_4 from '../assets/wal_4.png'
 import left_1 from '../assets/left_1.png'
 import right from '../assets/right.png'
 import side from '../assets/side.png'
+import about from '../assets/about.png'
 import Footer from './Footer'
 import CountdownTimer from './CountDownTimer'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const SEVEN_DAYS_IN_MS = 7 * 24 * 60 * 60 * 1000;
 const NOW_IN_MS = new Date().getTime();
@@ -22,6 +26,11 @@ const dateTimeAfterSevenDays = NOW_IN_MS + SEVEN_DAYS_IN_MS;
 
 
 function Home() {
+
+    useEffect(() => {
+        AOS.init();
+      }, [])
+
     return (
         <div className='bg-blue-100'>
 
@@ -32,7 +41,7 @@ function Home() {
                         <Menu />
 
                         <div className='absolute left-0 mt-8 lg:block hidden'>
-                            <img src={left_1} alt="" className='' />
+                            <img src={left_1} alt="" className='levitate' />
                         </div>
 
                         <div className='flex flex-col gap-y-6 text-center items-center justify-center lg:py-52 py-44 bg-top'>
@@ -41,12 +50,12 @@ function Home() {
                                 <img src={fire} alt="fire" className='' />
                             </div>
 
-                            <h2 className='lg:text-6xl text-3xl font-semibold font-poppins'>
+                            <h2  data-aos="fade-left" className='lg:text-6xl text-3xl font-semibold font-poppins'>
                                 Join Future of Arbitrum
                             </h2>
 
                             <div className='absolute right-0 mt-12 lg:block hidden'>
-                                <img src={right} alt="" className='' />
+                                <img src={right} alt="" className='levitate' />
                             </div>
 
                             <p className='lg:w-8/12 text-lg'>Optimus Arb is an Arbitrum Based project. The utility behind Optimus Arb is Optimum, which will be the first ever <span className='text-blue-50'>Arbitrum Virtual Machine (AVM)</span> compatible multi-chain wallet with our Optimum technology (in development), allowing for anonymous transactions on the blockchain.</p>
@@ -54,7 +63,7 @@ function Home() {
                         </div>
 
                         <div className='absolute lg:block hidden'>
-                            <img src={on} alt="on" className='ml-44' />
+                            <img src={on} alt="on" className='ml-44 levitate' />
                         </div>
                     </div>
                 </div>
@@ -66,10 +75,10 @@ function Home() {
                         <div className="lg:flex block justify-center items-center gap-x-12 py-12">
 
                             <div className='lg:w-1/3 w-full'>
-
+                                <img src={about} alt="" className='rotate' />
                             </div>
 
-                            <div className='lg:w-1/2 w-full flex flex-col gap-6'>
+                            <div className='lg:w-1/3 w-full flex flex-col gap-6'>
                                 <h4 className='font-semibold flex items-center gap-2'>
                                     <span>
                                         <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -100,7 +109,7 @@ function Home() {
                         </div>
 
                         <div className='absolute lg:block hidden'>
-                            <img src={on} alt="on" className='ml-44' />
+                            <img src={on} alt="on" className='ml-44 levitate' />
                         </div>
 
                     </div>
@@ -112,7 +121,7 @@ function Home() {
                     <div className='container mx-auto'>
 
                         <div className='absolute left-0 lg:block hidden'>
-                            <img src={left_1} alt="" className='' />
+                            <img src={left_1} alt="" className='levitate' />
                         </div>
 
                         <h2 className='lg:text-4xl text-3xl text-center font-poppins font-semibold mb-16'>
@@ -166,7 +175,7 @@ function Home() {
                                     <h4 className='font-semibold text-center text-xl pb-1.5'>
                                         Tax: 5/5
                                     </h4>
-                                    <img src={token} alt="token" className='flex mx-auto' />
+                                    <img src={token} alt="token" className='flex mx-auto rotate' />
 
                                     <div className='flex gap-2 items-center justify-center mt-16'>
                                         <span>
@@ -363,7 +372,7 @@ function Home() {
                 </div>
 
                 <div className='absolute left-0 lg:block hidden'>
-                    <img src={left_1} alt="" className='' />
+                    <img src={left_1} alt="" className='levitate' />
                 </div>
 
                 {/* A special feature */}
@@ -389,11 +398,11 @@ function Home() {
                                 </div>
 
                                 <div>
-                                    <img src={on} alt="on" className='-ml-5' />
+                                    <img src={on} alt="on" className='-ml-5 levitate' />
                                 </div>
 
                                 <div className='absolute right-0 mt-8 lg:block hidden'>
-                                    <img src={right} alt="" className='' />
+                                    <img src={right} alt="" className='levitate' />
                                 </div>
 
                             </div>
