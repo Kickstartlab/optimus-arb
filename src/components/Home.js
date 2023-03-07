@@ -19,6 +19,8 @@ import Footer from './Footer'
 import CountdownTimer from './CountDownTimer'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import SignUp from './SignUp'
+import SignIn from './SignIn'
 
 
 const SEVEN_DAYS_IN_MS = 7 * 24 * 60 * 60 * 1000;
@@ -175,7 +177,7 @@ function Home() {
 
                                 </div>
 
-                                <a href="https://t.me/MetaGenesisPortal">
+                                <a href="/">
                                     <button className="text-white-100 bg-blue-50 border-2 border-blue-50 font-semibold hover:text-blue-50 hover:border-2 hpver:border-blue-50 hover:bg-blue-100 rounded-full py-3 lg:px-10 px-4 mt-5 uppercase">
                                         Learn more
                                     </button>
@@ -436,12 +438,14 @@ function Home() {
 
                             </div>
 
-
-
                         </div>
                     </div>
 
                     <Footer />
+
+                    <SignUp />
+
+                    <SignIn />
 
                 </div>
             </div>

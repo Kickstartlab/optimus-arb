@@ -37,7 +37,7 @@ function Footer() {
                                 <a href='https://t.me/optimusarb'>
                                     <img src={telegram} alt="Telegram" className='' />
                                 </a>
-                                <a href='https://twitter.com/optimusarb'>
+                                <a href='https://twitter.com/OPTIMUSARBit'>
                                     <img src={twitter} alt="Twitter" className='' />
                                 </a>
                                 <a href='/'>
