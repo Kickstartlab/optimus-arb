@@ -12,9 +12,6 @@ import wal_4 from '../assets/wal_4.png'
 import left_1 from '../assets/left_1.png'
 import right from '../assets/right.png'
 import side from '../assets/side.png'
-
-
-
 import Footer from './Footer'
 import CountdownTimer from './CountDownTimer'
 
@@ -125,7 +122,7 @@ function Home() {
                         <div className="lg:flex block justify-center items-center gap-x-12">
 
                             <div className='lg:w-1/3 w-full flex flex-col gap-6'>
-                                <h4 className='font-semibold text-xl uppercase'>
+                                <h4 className='font-semibold text-lg uppercase border-b-4 border-blue-50 w-32 pb-4'>
                                     Details
                                 </h4>
                                 <h2 className='lg:text-4xl text-3xl'>
