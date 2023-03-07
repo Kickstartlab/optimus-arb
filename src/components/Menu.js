@@ -69,7 +69,7 @@ function Menu() {
                         <a href="#utility" className="text-lg ml-4 font-semibold">Utility</a>
                     </button>
                     <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer  text-white-100">
-                        <a href="#contract" className="text-lg ml-4 font-semibold">Contract</a>
+                        <a href="/signup" className="text-lg ml-4 font-semibold">Contact</a>
                     </button>
                     <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer  text-white-100">
                         <a href="/" className="text-lg ml-4 font-semibold">Whitepaper</a>
