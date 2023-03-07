@@ -3,6 +3,7 @@ import logo_1 from '../assets/logo_1.png'
 import google from '../assets/google.png'
 import facebook from '../assets/facebook.png'
 import apple from '../assets/apple.png'
+import { Link } from "react-router-dom";
 
 
 function SignUp() {
@@ -65,7 +66,7 @@ function SignUp() {
                 style={{
                     display: error ? '' : 'none',
                 }}>
-                <h1>Please enter all the fields</h1>
+                <h1 className='text-white-100 text-center'>Please enter all the fields</h1>
             </div>
         );
     };
@@ -106,12 +107,12 @@ function SignUp() {
 
                     </div>
 
-                    <button className="text-white-100 bg-blue-50 border-2 border-blue-50 font-semibold hover:text-blue-50 hover:border-2 hpver:border-blue-50 hover:bg-white-100 rounded-2xl py-3 lg:px-10 px-4 mt-5 uppercase w-56 mb-5 flex mx-auto">
+                    <button onClick={handleSubmit} type='submit' className="text-white-100 bg-blue-50 border-2 border-blue-50 font-semibold hover:text-blue-50 hover:border-2 hpver:border-blue-50 hover:bg-white-100 rounded-2xl py-3 lg:px-10 px-4 mt-5 uppercase w-56 mb-5 flex mx-auto">
                         Create Account
                     </button>
 
                     <p className='text-center'>
-                        Already Have An Account? Sign In
+                        Already Have An Account?<Link to='/signin' className='hover:text-blue-50'> Sign In</Link>
                     </p>
                 </form>
 

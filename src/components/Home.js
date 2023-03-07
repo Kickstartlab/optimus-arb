@@ -19,8 +19,6 @@ import Footer from './Footer'
 import CountdownTimer from './CountDownTimer'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import SignUp from './SignUp'
-import SignIn from './SignIn'
 
 
 const SEVEN_DAYS_IN_MS = 7 * 24 * 60 * 60 * 1000;
@@ -54,7 +52,7 @@ function Home() {
                             <img src={left_1} alt="" className='levitate' />
                         </div>
 
-                        <div className='flex flex-col gap-y-6 text-center items-center justify-center lg:py-44'>
+                        <div className='flex flex-col gap-y-6 text-center items-center justify-center py-44'>
 
                             <div>
                                 <img src={fire} alt="fire" className='' />
@@ -442,10 +440,6 @@ function Home() {
                     </div>
 
                     <Footer />
-
-                    <SignUp />
-
-                    <SignIn />
 
                 </div>
             </div>
