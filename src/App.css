@@ -10,6 +10,7 @@
   background-image: url(./assets/bg_spiral.png);
   background-position: center;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 .bg-circle {
@@ -63,4 +64,19 @@
   100% {
     transform: translate(0, -0px);
   }
+}
+
+[data-aos="example-anim1"] {
+  transform: skewX(45deg);
+  opacity: 0;
+  transition-property: transform, opacity;
+}
+
+.aos-animate {
+  transform: skewX(0);
+  opacity: 1;
+}
+
+.z-1{
+  z-index: -1;
 }

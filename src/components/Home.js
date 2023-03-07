@@ -1,5 +1,5 @@
 
-import React, {useEffect} from 'react'
+import React, { useEffect } from 'react'
 import Menu from './Menu'
 import fire from '../assets/fire.png'
 import on from '../assets/on.png'
@@ -13,6 +13,7 @@ import left_1 from '../assets/left_1.png'
 import right from '../assets/right.png'
 import side from '../assets/side.png'
 import about from '../assets/about.png'
+import spiral_2 from '../assets/spiral_2.png'
 import Footer from './Footer'
 import CountdownTimer from './CountDownTimer'
 import AOS from 'aos';
@@ -28,8 +29,10 @@ const dateTimeAfterSevenDays = NOW_IN_MS + SEVEN_DAYS_IN_MS;
 function Home() {
 
     useEffect(() => {
-        AOS.init();
-      }, [])
+        AOS.init({
+            duration: 3000,
+        });
+    }, [])
 
     return (
         <div className='bg-blue-100'>
@@ -50,7 +53,7 @@ function Home() {
                                 <img src={fire} alt="fire" className='' />
                             </div>
 
-                            <h2  data-aos="fade-left" className='lg:text-6xl text-3xl font-semibold font-poppins'>
+                            <h2 data-aos="fade-up" className='lg:text-6xl text-3xl font-semibold font-poppins'>
                                 Join Future of Arbitrum
                             </h2>
 
@@ -117,7 +120,7 @@ function Home() {
 
                 {/* Contract & Token Supply */}
 
-                <div id='contract' className="lg:px-20 lg:py-12 py-5 px-5 side">
+                <div id='contract' className="lg:px-20 lg:py-12 py-5 px-5">
                     <div className='container mx-auto'>
 
                         <div className='absolute left-0 lg:block hidden'>
@@ -152,6 +155,10 @@ function Home() {
                                         <span className='text-blue-50'>Smart Contract Platform: </span>
                                         ARB
                                     </p>
+                                </div>
+
+                                <div className='absolute left-0 mt-12 lg:block hidden'>
+                                    <img src={spiral_2} alt="" className='w-9/12 levitate z-1' />
                                 </div>
 
                                 <div>
@@ -230,7 +237,7 @@ function Home() {
                                 </span>
                             </h4>
 
-                            <div className='bg-white-100 rounded-xl p-5 text-blue-100 text-center lg:w-9/12'>
+                            <div data-aos="example-anim1" className='bg-white-100 rounded-xl p-5 text-blue-100 text-center lg:w-9/12'>
                                 <h2 className='lg:text-4xl text-2xl text-center font-poppins font-semibold'>
                                     Our Utility Optimum
                                 </h2>
@@ -260,62 +267,72 @@ function Home() {
 
                         <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-3 my-20'>
 
-                            <div className='border-2 border-blue-50 p-8 rounded-lg flex flex-col gap-y-6'>
-                                <div className='bg-circle p-5 w-20'>
-                                    <img src={wal_1} alt="wallet" className='flex mx-auto' />
+                            <div data-aos="flip-up">
+                                <div className='border-2 border-blue-50 p-8 rounded-lg flex flex-col gap-y-6'>
+                                    <div className='bg-circle p-5 w-20'>
+                                        <img src={wal_1} alt="wallet" className='flex mx-auto' />
+                                    </div>
+
+                                    <h4 className='text-xl font-semibold'>
+                                        The Optimum Wallet
+                                    </h4>
+
+                                    <p className='text-black-50'>
+                                        OptimusArb will utilize our "Optimum technology" system which is our privacy-enhancing smart contract technology to allow for anonymous transactions. Invest privately and leave no trace like a ghost!
+                                    </p>
                                 </div>
-
-                                <h4 className='text-xl font-semibold'>
-                                    The Optimum Wallet
-                                </h4>
-
-                                <p className='text-black-50'>
-                                    OptimusArb will utilize our "Optimum technology" system which is our privacy-enhancing smart contract technology to allow for anonymous transactions. Invest privately and leave no trace like a ghost!
-                                </p>
                             </div>
 
-                            <div className='border-2 border-blue-50 p-8 rounded-lg flex flex-col gap-y-6 lg:translate-y-32'>
-                                <div className='bg-circle p-5 w-20'>
-                                    <img src={wal_2} alt="wallet" className='flex mx-auto' />
+
+                            <div data-aos="flip-up">
+                                <div className='border-2 border-blue-50 p-8 rounded-lg flex flex-col gap-y-6 lg:translate-y-32'>
+                                    <div className='bg-circle p-5 w-20'>
+                                        <img src={wal_2} alt="wallet" className='flex mx-auto' />
+                                    </div>
+
+                                    <h4 className='text-xl font-semibold'>
+                                        Mobile + Web3 Compatible
+                                    </h4>
+
+                                    <p className='text-black-50'>
+                                        OptimusArb will be both Web3 + Mobile compatible. Our mission with OptimusArb is for the wallet to be a one stop shop for all your cross chain investment needs.
+                                    </p>
                                 </div>
-
-                                <h4 className='text-xl font-semibold'>
-                                    Mobile + Web3 Compatible
-                                </h4>
-
-                                <p className='text-black-50'>
-                                    OptimusArb will be both Web3 + Mobile compatible. Our mission with OptimusArb is for the wallet to be a one stop shop for all your cross chain investment needs.
-                                </p>
                             </div>
 
-                            <div className='border-2 border-blue-50 p-8 rounded-lg flex flex-col gap-y-6'>
-                                <div className='bg-circle p-5 w-20'>
-                                    <img src={wal_3} alt="wallet" className='flex mx-auto' />
+
+                            <div data-aos="flip-up">
+                                <div className='border-2 border-blue-50 p-8 rounded-lg flex flex-col gap-y-6'>
+                                    <div className='bg-circle p-5 w-20'>
+                                        <img src={wal_3} alt="wallet" className='flex mx-auto' />
+                                    </div>
+
+                                    <h4 className='text-xl font-semibold'>
+                                        Optimum TECHNOLOGY
+                                    </h4>
+
+                                    <p className='text-black-50'>
+                                        Optimum Technology is Based on zk-SNARK
+                                        OptimusArb Optimum Technology will utilize zk-SNARK technology which stands for “Zero-Knowledge Succinct Non-Interactive Argument of Knowledge.”
+                                    </p>
                                 </div>
-
-                                <h4 className='text-xl font-semibold'>
-                                    Optimum TECHNOLOGY
-                                </h4>
-
-                                <p className='text-black-50'>
-                                    Optimum Technology is Based on zk-SNARK
-                                    OptimusArb Optimum Technology will utilize zk-SNARK technology which stands for “Zero-Knowledge Succinct Non-Interactive Argument of Knowledge.”
-                                </p>
                             </div>
 
-                            <div className='border-2 border-blue-50 p-8 rounded-lg flex flex-col gap-y-6 lg:translate-y-32'>
-                                <div className='bg-circle p-5 w-20'>
-                                    <img src={wal_4} alt="wallet" className='flex mx-auto' />
+                            <div data-aos="flip-up">
+                                <div className='border-2 border-blue-50 p-8 rounded-lg flex flex-col gap-y-6 lg:translate-y-32'>
+                                    <div className='bg-circle p-5 w-20'>
+                                        <img src={wal_4} alt="wallet" className='flex mx-auto' />
+                                    </div>
+
+                                    <h4 className='text-xl font-semibold'>
+                                        Zk-SNARK is a zero-knowledge proof encryption protocol.
+                                    </h4>
+
+                                    <p className='text-black-50'>
+                                        The encryption protocol utilizes a secret key generation system.
+                                        Only the user gets the secret to a given deposit, which allows the user to withdraw the correlating funds from OptimusArb under a new address.
+                                    </p>
                                 </div>
-
-                                <h4 className='text-xl font-semibold'>
-                                    Zk-SNARK is a zero-knowledge proof encryption protocol.
-                                </h4>
-
-                                <p className='text-black-50'>
-                                    The encryption protocol utilizes a secret key generation system.
-                                    Only the user gets the secret to a given deposit, which allows the user to withdraw the correlating funds from OptimusArb under a new address.
-                                </p>
                             </div>
 
                         </div>
@@ -323,15 +340,15 @@ function Home() {
                     </div>
                 </div>
 
-                {/* <div className='absolute right-0 side -mt-12 -z-10 lg:block hidden'>
+                <div className='absolute right-0 -mt-12 lg:block hidden'>
                     <img src={side} alt="" className='' />
-                </div> */}
+                </div>
 
                 <hr className='mt-12 w-9/12 flex mx-auto line'></hr>
 
                 {/* zk-snark */}
 
-                <div id='utility' className="lg:px-20 lg:py-16 py-5 px-5">
+                <div id='snark' className="lg:px-20 lg:py-16 py-5 px-5">
                     <div className='container mx-auto'>
 
                         <div className='flex flex-col gap-8 items-center justify-center'>
@@ -350,7 +367,7 @@ function Home() {
                                 </span>
                             </h4>
 
-                            <div className='bg-white-100 rounded-xl p-5 text-blue-100 text-center w-9/12'>
+                            <div data-aos="example-anim1" className='bg-white-100 rounded-xl p-5 text-blue-100 text-center w-9/12'>
                                 <h2 className='lg:text-4xl text-3xl text-center font-poppins font-semibold'>
                                     Zk-SNARK
                                 </h2>
