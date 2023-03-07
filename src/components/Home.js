@@ -52,7 +52,7 @@ function Home() {
                             <img src={left_1} alt="" className='levitate' />
                         </div>
 
-                        <div className='flex flex-col gap-y-6 text-center items-center justify-center py-44'>
+                        <div className='flex flex-col gap-y-6 text-center items-center justify-center pt-44 lg:pb-44'>
 
                             <div>
                                 <img src={fire} alt="fire" className='' />
@@ -373,11 +373,11 @@ function Home() {
                             </h4>
 
                             <div data-aos="example-anim1" className='bg-white-100 rounded-xl p-5 text-blue-100 text-center w-9/12'>
-                                <h2 className='lg:text-4xl text-3xl text-center font-poppins font-semibold'>
+                                <h2 className='lg:text-4xl text-2xl text-center font-poppins font-semibold'>
                                     Zk-SNARK
                                 </h2>
 
-                                <p className='text-lg pt-3 uppercase'>
+                                <p className='lg:text-lg pt-3 uppercase'>
                                     Zk-SNARK is a zero-knowledge proof encryption protocol.<br></br>
                                     The encryption protocol utilizes a secret key generation system.
                                 </p>

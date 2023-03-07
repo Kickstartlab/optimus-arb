@@ -49,7 +49,7 @@ function Menu() {
             </div>
 
             {
-                show ? <div className="sidebar fixed top-0 bottom-0 lg:left-0 p-2 w-3/4 overflow-y-auto text-center font-outfit font-semibold bg-blue-50 z-20" style={{ left: "0" }}>
+                show ? <div className="sidebar fixed top-0 bottom-0 left-0 p-2 overflow-y-auto text-center font-outfit font-semibold bg-blue-50 z-20">
 
                     <div className="mt-3 mb-12">
                         <a href="/" className="text-white-100">
