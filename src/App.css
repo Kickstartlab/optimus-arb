@@ -1,38 +1,32 @@
-.App {
-  text-align: center;
+.border-custom {
+  box-shadow: 0px 6px 22px rgba(6, 34, 51, 0.22);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bg-gradient {
+  background: linear-gradient(359.43deg, #0B1D33 11.06%, rgba(11, 29, 51, 0) 33.43%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bg-top {
+  background-image: url(./assets/bg_spiral.png);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.bg-circle {
+  background: rgba(255, 255, 255, 0.07);
+  border: 4px solid rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(25px);
+  border-radius: 60px;
 }
 
-.App-link {
-  color: #61dafb;
+.line {
+  background: rgba(255, 255, 255, 0.22);
+  opacity: 0.2;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.side{
+  background-image: url(./assets/spiral_2.png);
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
