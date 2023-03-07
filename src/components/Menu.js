@@ -50,7 +50,7 @@ function Menu() {
             {
                 show ? <div className="sidebar fixed top-0 bottom-0 lg:left-0 p-2 w-3/4 overflow-y-auto text-center font-outfit font-semibold bg-blue-50 z-20" style={{ left: "0" }}>
 
-                    <div className="mt-3 px-3 mb-12">
+                    <div className="mt-3 mb-12">
                         <a href="/" className="text-white-100">
                             <img src={logo} alt="Logo" />
                         </a>
@@ -59,19 +59,19 @@ function Menu() {
                         <a href="/" className="text-lg ml-4 font-semibold">Home</a>
                     </button>
                     <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer hover:bg-white-100 text-white-100">
-                        <a href="#about" className="text-lg ml-4 font-semibold">About</a>
+                        <a href="#about" className="text-lg ml-4 font-semibold">About Us</a>
                     </button>
                     <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer  text-white-100">
-                        <a href="#achievement" className="text-lg ml-4 font-semibold">Achievement</a>
+                        <a href="#contract" className="text-lg ml-4 font-semibold">Contract</a>
                     </button>
                     <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer  text-white-100">
-                        <a href="#play" className="text-lg ml-4 font-semibold">Play</a>
+                        <a href="#utility" className="text-lg ml-4 font-semibold">Utility</a>
                     </button>
                     <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer  text-white-100">
-                        <a href="#conclusion" className="text-lg ml-4 font-semibold">Conclusion</a>
+                        <a href="#contract" className="text-lg ml-4 font-semibold">Contract</a>
                     </button>
                     <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer  text-white-100">
-                        <a href="#faq" className="text-lg ml-4 font-semibold">FAQ</a>
+                        <a href="#" className="text-lg ml-4 font-semibold">Whitepaper</a>
                     </button>
                 </div> : null
             }
