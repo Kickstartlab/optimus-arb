@@ -14,6 +14,7 @@ import right from '../assets/right.png'
 import side from '../assets/side.png'
 import about from '../assets/about.png'
 import spiral_2 from '../assets/spiral_2.png'
+import bg_spiral from '../assets/bg_spiral.png'
 import Footer from './Footer'
 import CountdownTimer from './CountDownTimer'
 import AOS from 'aos';
@@ -39,7 +40,11 @@ function Home() {
 
             <div className='bg-gradient font-outfit overflow-hidden text-white-100'>
 
-                <div id='home' className="lg:px-20 px-5">
+                <div className='absolute right-0 left-0 lg:block hidden mt-20'>
+                    <img src={bg_spiral} alt="" className='flex mx-auto rotate' />
+                </div>
+
+                <div id='home' className="lg:px-20 px-5 relative z-20">
                     <div className='container mx-auto'>
                         <Menu />
 
@@ -47,7 +52,7 @@ function Home() {
                             <img src={left_1} alt="" className='levitate' />
                         </div>
 
-                        <div className='flex flex-col gap-y-6 text-center items-center justify-center lg:py-52 py-44 bg-top'>
+                        <div className='flex flex-col gap-y-6 text-center items-center justify-center lg:py-44'>
 
                             <div>
                                 <img src={fire} alt="fire" className='' />
