@@ -91,7 +91,7 @@ function SignUp() {
 
                 </div>
 
-                <form className='p-12 bg-white-100 rounded-2xl w-1/2 flex flex-col justify-center mx-auto'>
+                <form className='p-12 bg-white-100 rounded-2xl lg:w-1/2 flex flex-col justify-center mx-auto'>
                     {/* Labels and inputs for form data */}
 
                     <div className='flex flex-col gap-y-6 items-center justify-center'>
