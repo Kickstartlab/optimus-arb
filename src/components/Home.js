@@ -41,7 +41,7 @@ function Home() {
             <div className='bg-gradient font-outfit overflow-hidden text-white-100'>
 
                 <div className='absolute right-0 left-0 mt-20'>
-                    <img src={bg_spiral} alt="" className='flex mx-auto rotate' />
+                    <img src={bg_spiral} alt="" className='flex mx-auto' />
                 </div>
 
                 <div id='home' className="lg:px-20 px-5 relative z-20">

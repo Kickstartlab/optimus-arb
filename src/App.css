@@ -34,7 +34,6 @@
 
 .rotate {
   animation: rotation 10s infinite linear;
-  /* filter: drop-shadow(8px 8px 6px rgb(146, 179, 221)); */
 }
 
 @keyframes rotation {
