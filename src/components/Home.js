@@ -16,16 +16,8 @@ import about from '../assets/about.png'
 import spiral_2 from '../assets/spiral_2.png'
 import bg_spiral from '../assets/bg_spiral.png'
 import Footer from './Footer'
-import CountdownTimer from './CountDownTimer'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
-
-const SEVEN_DAYS_IN_MS = 7 * 24 * 60 * 60 * 1000;
-const NOW_IN_MS = new Date().getTime();
-
-const dateTimeAfterSevenDays = NOW_IN_MS + SEVEN_DAYS_IN_MS;
-
 
 function Home() {
 
@@ -125,12 +117,13 @@ function Home() {
 
                 {/* Contract & Token Supply */}
 
-                <div id='contract' className="lg:px-20 lg:py-12 py-5 px-5">
-                    <div className='container mx-auto'>
 
-                        <div className='absolute left-0 lg:block hidden'>
-                            <img src={left_1} alt="" className='levitate' />
-                        </div>
+                <div className='absolute left-0 mt-12 lg:block hidden'>
+                    <img src={left_1} alt="" className='levitate' />
+                </div>
+
+                <div id='contract' className="lg:px-20 lg:py-12 py-5 px-5 relative z-20">
+                    <div className='container mx-auto'>
 
                         <h2 className='lg:text-4xl text-3xl text-center font-poppins font-semibold mb-16'>
                             Contract & Token Supply
@@ -167,11 +160,21 @@ function Home() {
                                 </div>
 
                                 <div>
-                                    <p className='font-semibold text-blue-50'>
-                                        Live Launch date
+                                    <p className='font-semibold uppercase'>
+                                        Live Launch date:
+                                        <span className='text-blue-50'> 08-03-2023 </span>
+
                                     </p>
 
-                                    <CountdownTimer targetDate={dateTimeAfterSevenDays} />
+                                    <p className='font-semibold uppercase'>
+                                        At:
+                                        <span className='text-blue-50'> 8pm utc </span>
+
+                                    </p>
+
+                                    {/* <CountdownTimer targetDate={dateTimeAfterSevenDays} /> */}
+
+
 
                                 </div>
 

@@ -17,7 +17,7 @@ function Menu() {
                 </a>
 
                 <nav>
-                    <ul className="flex justify-center gap-12 tracking-widest items-center uppercase">
+                    <ul className="flex justify-center gap-6 tracking-widest items-center uppercase">
                         <li><a href="/" className="hover:border-b-4 border-blue-50 pb-1.5">Home</a></li>
                         <li><a href="#about" className="hover:border-b-4 border-blue-50 pb-1.5">about us</a></li>
                         <li><a href="#contract" className="hover:border-b-4 border-blue-50 pb-1.5">contract</a></li>

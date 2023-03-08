@@ -8,19 +8,12 @@ import { Link } from "react-router-dom";
 
 function SignUp() {
 
-    const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
     // States for checking the errors
     const [submitted, setSubmitted] = useState(false);
     const [error, setError] = useState(false);
-
-    // Handling the name change
-    const handleName = (e) => {
-        setName(e.target.value);
-        setSubmitted(false);
-    };
 
     // Handling the email change
     const handleEmail = (e) => {
@@ -37,7 +30,7 @@ function SignUp() {
     // Handling the form submission
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (name === '' || email === '' || password === '') {
+        if (email === '' || password === '') {
             setError(true);
         } else {
             setSubmitted(true);
@@ -53,7 +46,7 @@ function SignUp() {
                 style={{
                     display: submitted ? '' : 'none',
                 }}>
-                <h1>User {name} successfully registered!!</h1>
+                <h1>User {email} successfully registered!!</h1>
             </div>
         );
     };
@@ -83,8 +76,9 @@ function SignUp() {
 
                 <div className='flex flex-col items-center justify-center gap-y-6'>
 
-                    <img src={logo_1} alt="mobile" className='' />
-
+                    <a href='/'>
+                        <img src={logo_1} alt="mobile" className='' />
+                    </a>
                     <h2 className='lg:text-4xl text-3xl text-center font-poppins font-semibold text-white-100 mb-8'>
                         Setup Your Account
                     </h2>
@@ -107,12 +101,12 @@ function SignUp() {
 
                     </div>
 
-                    <button onClick={handleSubmit} type='submit' className="text-white-100 bg-blue-50 border-2 border-blue-50 font-semibold hover:text-blue-50 hover:border-2 hpver:border-blue-50 hover:bg-white-100 rounded-2xl py-3 lg:px-10 px-4 mt-5 uppercase w-56 mb-5 flex mx-auto">
+                    <button onClick={handleSubmit} type='submit' className="text-white-100 bg-blue-50 border-2 border-blue-50 font-semibold hover:text-blue-50 hover:border-2 hpver:border-blue-50 hover:bg-white-100 rounded-2xl py-3 lg:px-10 px-4 mt-5 uppercase lg:w-56 mb-5 flex mx-auto">
                         Create Account
                     </button>
 
                     <p className='text-center'>
-                        Already Have An Account?<Link to='/signin' className='hover:text-blue-50'> Sign In</Link>
+                        Already Have An Account?<Link to='/signin' className='text-blue-50'> Sign In</Link>
                     </p>
                 </form>
 

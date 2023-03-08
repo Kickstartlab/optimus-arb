@@ -78,7 +78,9 @@ function SignIn() {
 
                 <div className='flex flex-col items-center justify-center gap-y-6'>
 
-                    <img src={logo_1} alt="mobile" className='' />
+                    <a href='/'> 
+                        <img src={logo_1} alt="mobile" className='' />
+                    </a>
 
                     <h2 className='lg:text-4xl text-3xl text-center font-poppins font-semibold text-white-100 mb-8'>
                         Login To your Account
@@ -101,12 +103,12 @@ function SignIn() {
 
                     </div>
 
-                    <button onClick={handleSubmit} className="text-white-100 bg-blue-50 border-2 border-blue-50 font-semibold hover:text-blue-50 hover:border-2 hpver:border-blue-50 hover:bg-white-100 rounded-2xl py-3 lg:px-10 px-4 mt-5 uppercase w-36 mb-5 flex mx-auto">
+                    <button onClick={handleSubmit} className="text-white-100 bg-blue-50 border-2 border-blue-50 font-semibold hover:text-blue-50 hover:border-2 hpver:border-blue-50 hover:bg-white-100 rounded-2xl py-3 lg:px-10 px-4 mt-5 uppercase lg:w-36 mb-5 flex mx-auto">
                         Sign In
                     </button>
 
                     <p className='text-center'>
-                        Don’t Have An Account? <Link to='/signup' className='hover:text-blue-50'> Sign Up</Link>
+                        Don’t Have An Account? <Link to='/signup' className='text-blue-50'> Sign Up</Link>
                     </p>
                 </form>
 

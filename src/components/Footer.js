@@ -3,6 +3,8 @@ import arrow from '../assets/arrow.png'
 import telegram from '../assets/telegram.png'
 import twitter from '../assets/twitter.png'
 import work from '../assets/work.png'
+import { Link } from "react-router-dom";
+
 
 
 
@@ -21,6 +23,7 @@ function Footer() {
                                     <li><a href="#contract" className="hover:border-b-4 border-blue-50 pb-1.5">contract</a></li>
                                     <li><a href="#about" className="hover:border-b-4 border-blue-50 pb-1.5">about us</a></li>
                                     <li><a href="#utility" className="hover:border-b-4 border-blue-50 pb-1.5">utility</a></li>
+                                    <li><Link to="/signup" className="hover:border-b-4 border-blue-50 pb-1.5">sign up</Link></li>
                                 </ul>
                             </nav>
 
