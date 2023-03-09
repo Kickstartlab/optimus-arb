@@ -155,7 +155,7 @@ function Home() {
                                         ARB
                                     </p>
                                     <p className='font-semibold'>
-                                        <span className='text-blue-50'> Poli°® 🐋: </span>
+                                        <span className='text-blue-50'> CA : </span>
                                         0x0F8CC62FAfB480dc85aFb31859f3C8d085e9A470
                                     </p>
 
