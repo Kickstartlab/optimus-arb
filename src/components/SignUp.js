@@ -36,6 +36,9 @@ function SignUp() {
             setSubmitted(true);
             setError(false);
         }
+        console.log(email)
+        console.log(password)
+
     };
 
     // Showing success message
@@ -65,8 +68,8 @@ function SignUp() {
     };
 
     return (
-        <div>
-            <div className="form bg-blue-100 py-12 font-outfit">
+        <div className=' bg-blue-100'>
+            <div className="form py-12 px-5 bg-gradient font-outfit container">
 
                 {/* Calling to the methods */}
                 <div className="messages">
@@ -91,7 +94,7 @@ function SignUp() {
                     <div className='flex flex-col gap-y-6 items-center justify-center'>
 
                         <input onChange={handleEmail} className="border-2 border-blue-50 rounded-xl p-5 w-full"
-                            value={email} type="email" placeholder='Enter Your Email' />
+                            value={email} type="email" placeholder='Enter Your Email'  />
 
                         <input onChange={handlePassword} className="border-2 border-blue-50 rounded-xl p-5 w-full"
                             value={password} type="password" placeholder='Enter Your Password' />
@@ -105,7 +108,7 @@ function SignUp() {
                         Create Account
                     </button>
 
-                    <p className='text-center'>
+                    <p className='text-center text-black-100'>
                         Already Have An Account?<Link to='/signin' className='text-blue-50'> Sign In</Link>
                     </p>
                 </form>

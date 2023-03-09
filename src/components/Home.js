@@ -18,6 +18,7 @@ import bg_spiral from '../assets/bg_spiral.png'
 import Footer from './Footer'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import SignUp from './SignUp'
 
 function Home() {
 
@@ -99,7 +100,7 @@ function Home() {
                                     Optimus Arb is an Arbitrum Based project. The utility behind Optimus Arb is Optimum, which will be the first ever Arbitrum Virtual Machine (AVM) compatible multi-chain wallet with our Optimum technology (in development), allowing for anonymous transactions on the blockchain.
                                 </p>
 
-                                <a href="https://t.me/MetaGenesisPortal">
+                                <a href="/">
                                     <button className="text-white-100 border-2 border-custom rounded-full py-2 lg:px-8 px-4 mt-5 uppercase">
                                         Whitepaper
                                     </button>
@@ -398,6 +399,12 @@ function Home() {
 
                 <div className='absolute left-0 lg:block hidden'>
                     <img src={left_1} alt="" className='levitate' />
+                </div>
+
+                {/* sign up form */}
+
+                <div id='signup'>
+                    <SignUp />
                 </div>
 
                 {/* A special feature */}

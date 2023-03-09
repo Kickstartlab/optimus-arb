@@ -23,7 +23,7 @@ function Menu() {
                         <li><a href="#contract" className="hover:border-b-4 border-blue-50 pb-1.5">contract</a></li>
                         <li><a href="#play" className="hover:border-b-4 border-blue-50 pb-1.5">Play</a></li>
                         <li><a href="#utility" className="hover:border-b-4 border-blue-50 pb-1.5">utility</a></li>
-                        <li><Link to="/signup" className="hover:border-b-4 border-blue-50 pb-1.5">contact us</Link></li>
+                        <li><a href="#signup" className="hover:border-b-4 border-blue-50 pb-1.5">Sign Up</a></li>
                     </ul>
                 </nav>
 
