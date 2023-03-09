@@ -69,7 +69,7 @@ function SignUp() {
 
     return (
         <div className=' bg-blue-100'>
-            <div className="form py-12 px-5 bg-gradient font-outfit container">
+            <div className="form py-12 px-5 bg-blue-100 font-outfit container mx-auto">
 
                 {/* Calling to the methods */}
                 <div className="messages">

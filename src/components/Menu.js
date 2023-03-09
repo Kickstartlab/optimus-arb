@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import logo from '../assets/logo.png';
-import { Link } from "react-router-dom";
 
 
 
@@ -59,7 +58,7 @@ function Menu() {
                     <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center rounded-md transition duration-500 cursor-pointer  text-white-100">
                         <a href="/" className="text-lg ml-4 font-semibold">Home</a>
                     </button>
-                    <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer hover:bg-white-100 text-white-100">
+                    <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer text-white-100">
                         <a href="#about" className="text-lg ml-4 font-semibold">About Us</a>
                     </button>
                     <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer  text-white-100">
@@ -69,7 +68,7 @@ function Menu() {
                         <a href="#utility" className="text-lg ml-4 font-semibold">Utility</a>
                     </button>
                     <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer  text-white-100">
-                        <Link to="/signup" className="text-lg ml-4 font-semibold">Contact</Link>
+                        <a href="#signup" className="text-lg ml-4 font-semibold">Sign Up</a>
                     </button>
                     <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer  text-white-100">
                         <a href="/" className="text-lg ml-4 font-semibold">Whitepaper</a>

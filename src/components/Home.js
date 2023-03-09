@@ -154,6 +154,12 @@ function Home() {
                                         <span className='text-blue-50'>Smart Contract Platform: </span>
                                         ARB
                                     </p>
+                                    <p className='font-semibold'>
+                                        <span className='text-blue-50'> Poli°® 🐋: </span>
+                                        0x0F8CC62FAfB480dc85aFb31859f3C8d085e9A470
+                                    </p>
+
+
                                 </div>
 
                                 <div className='absolute left-0 mt-12 lg:block hidden'>
@@ -172,9 +178,6 @@ function Home() {
                                         <span className='text-blue-50'> 8pm utc </span>
 
                                     </p>
-
-                                    {/* <CountdownTimer targetDate={dateTimeAfterSevenDays} /> */}
-
 
 
                                 </div>

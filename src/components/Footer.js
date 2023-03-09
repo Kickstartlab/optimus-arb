@@ -2,7 +2,7 @@ import React from 'react'
 import arrow from '../assets/arrow.png'
 import telegram from '../assets/telegram.png'
 import twitter from '../assets/twitter.png'
-import work from '../assets/work.png'
+// import work from '../assets/work.png'
 // import { Link } from "react-router-dom";
 
 
@@ -43,9 +43,9 @@ function Footer() {
                                 <a href='https://twitter.com/OPTIMUSARBit'>
                                     <img src={twitter} alt="Twitter" className='' />
                                 </a>
-                                <a href='/'>
+                                {/* <a href='/'>
                                     <img src={work} alt="work" className='' />
-                                </a>
+                                </a> */}
 
                             </div>
 
@@ -59,6 +59,7 @@ function Footer() {
                             <ul className="flex gap-6 items-center lg:mt-0 mt-6">
                                 <li><a href="/" className="text-blue-50">Terms of Service</a></li>
                                 <li><a href="/" className="text-blue-50">Privacy Policy</a></li>
+                                <li><a href="mailto:optimusarb@gmail.com" className="text-blue-50">Email</a></li>
                             </ul>
                         </div>
                     </div>
